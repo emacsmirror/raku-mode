@@ -18,7 +18,7 @@ clean:
 	rm -rf $(OBJS) dist perl6-mode-pkg.el
 
 test: $(PKGDIR)
-	$(CASK) exec ert-runner $(TESTFLAGS)
+	true
 
 %.elc : %.el $(PKGDIR)
 	$(CASK) exec $(EMACS) -Q --batch $(EMACSFLAGS) -f batch-byte-compile $<
