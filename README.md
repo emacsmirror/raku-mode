@@ -8,6 +8,17 @@ Perl 6 mode lets you edit Perl 6 code with [GNU Emacs][] 24.
 
 This mode needs GNU Emacs 24.4.
 
+***DEPRECATION NOTICE***
+
+This mode is now renamed to `raku-mode` per the Perl6 -> Raku language
+rename.  Please install/upgrade to that package instead:
+
+```el
+(use-package raku-mode
+  :ensure t
+  :defer t)
+```
+
 ## Features
 
 * Basic syntax highlighting
